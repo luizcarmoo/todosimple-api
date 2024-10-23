@@ -10,6 +10,7 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonProperty.Access;
 
@@ -81,6 +82,7 @@ public class User {
     this.password = password;
   }
 
+  @JsonIgnore
   public List<Task> getTasks() {
     return this.tasks;
   }

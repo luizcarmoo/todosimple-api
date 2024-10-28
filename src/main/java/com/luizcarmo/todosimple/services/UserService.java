@@ -18,7 +18,7 @@ public class UserService {
   public User findById(Long id){
     Optional<User> user = this.userRepository.findById(id);
     return user.orElseThrow(() -> new RuntimeException(
-      "Usuário não encontrado! Id: " + id + ", Tipo: " + User.class.getName()
+      "User not found! Id: " + id + ", Type: " + User.class.getName()
     ));
   }
 
@@ -41,7 +41,7 @@ public class UserService {
     try {
       this.userRepository.deleteById(id);
     } catch (Exception e) {
-      throw new RuntimeException("Não é possível excluir pois há entidades relacionadas!");
+      throw new RuntimeException("Cannot delete because there are related entities!");
     }
   }
 

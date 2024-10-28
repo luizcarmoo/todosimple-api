@@ -24,7 +24,7 @@ public class TaskService {
   public Task findById(Long id) {
     Optional<Task> task = this.taskRepository.findById(id);
     return task.orElseThrow(() -> new RuntimeException(
-      "Tarefa não encontrada! Id" + id + ", Tipo: " + Task.class.getName()
+      "Task not found! Id" + id + ", Tipo: " + Task.class.getName()
     ));
   }
 

@@ -1,8 +1,8 @@
 package com.luizcarmo.todosimple.services.exceptions;
 
-import java.nio.file.AccessDeniedException;
 
 import org.springframework.http.HttpStatus;
+import org.springframework.security.access.AccessDeniedException;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 @ResponseStatus(value = HttpStatus.FORBIDDEN)

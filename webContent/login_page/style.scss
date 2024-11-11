@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+$theme-color: #00d9ff;
+$theme-color2: #0077ff;
+$theme-color3: #00ff9d;
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1.5rem;
+
+     &::after {
+         content: '';
+         position: fixed;
+         inset: 0;
+         background-color: $theme-color;
+         width: 60%;
+         height: 100vh;
+         clip-path: polygon(0 100%, 0 0, 100% 0, 70% 100%);
+         z-index: -1;
+    }
+}
+
+.login-card {
+    background-color: white;
+    border: 1px solid #dddddd85;
+    box-shadow: 0 10px 50px -30px black;
+    width: 90vw;
+    height: 90vh;
+    border-radius: 30px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: auto auto;
+
+    a {
+        text-decoration: none;
+        color: $theme-color2;
+    }
+
+    .column {
+        padding: 4rem;
+
+        &:last-child {
+            position: relative;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            gap: 40px;
+            
+            
+            .svg-container {
+                position: absolute;
+                bottom: 5%;
+                right: 5%;
+                width: 100%; /* Ajuste o tamanho conforme necessário */
+                height: 100%; /* Ajuste o tamanho conforme necessário */
+                background: url('../images/model-2-login-screen-animate.svg') no-repeat;
+                background-size: contain;
+                background-position: right;
+                opacity: 50%;
+                filter: drop-shadow(2px 2px 10px #006c7a80);
+                // filter: hue-rotate(320deg);
+            }
+            
+            &:after {
+                content: "";
+                position: absolute;
+                background: linear-gradient(90deg, white, #ffffff33);
+                inset: 0;
+            }
+            
+            * {
+                z-index: 1;
+            }
+
+            a {
+                display: inline-block;
+                padding: 15px 30px;
+                font-size: 1.1rem;
+                font-weight: 600;
+                color: white;
+                border: none;
+                border-radius: 30px;
+                text-align: center;
+                cursor: pointer;
+                transition: all .3s;
+                background-color: #00a2ffb6;
+                text-shadow: 2px 2px 3px $theme-color2;
+                
+                &:hover {
+                    box-shadow: 1px 1.5px 5px gray;
+                    text-shadow: 2px 2px 3px #17283d;
+                    background-color: #00a2ffdc;
+                }
+
+                &:active {
+                    scale: .95;
+                    background-color: #006199;
+                }
+            }
+        }
+
+        &:last-child {
+            text-align: center;
+        }
+    }
+
+    h1 {
+        margin-bottom: 15px;
+    }
+
+    .form-element {
+        width: 100%;
+        border: none;
+        background-color: #f1f1f1;
+        padding: 20px 30px;
+        font-size: 20px;
+        border-radius: 30px;
+        transition: box-shadow .2s;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px $theme-color;
+        }
+    }
+
+
+    input[type=checkbox] {
+        accent-color: $theme-color;
+        width: 16px;
+        height: 16px;
+    }
+
+    form {
+        margin-top: 3rem;
+
+
+        &>* {
+            margin-top: 1rem;
+
+            button {
+                font-size: 15px;
+                font-weight: 700;
+                background-color: #00a2ffb6;
+                color: white;
+                border: none;
+                padding: 20px 30px;
+                border-radius: 35px;
+                text-shadow: 1px 1px 3px $theme-color2;
+                cursor: pointer;
+                transition: all .2s;
+
+                &:hover {
+                    box-shadow: 1px 1.5px 5px gray;
+                    text-shadow: 1px 1px 3px #17283d;
+                    background-color: #00a2ffdc;
+                }
+
+                &:active {
+                    scale: .95;
+                    background-color: #006199;
+                }
+            }
+
+            .form-checkbox-item {
+                display: flex;
+                align-items: center;
+                gap: .7rem;
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 1rem;
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 50px;
+        font-size: 20px;
+        color: white;
+
+        &.linkedin {
+            background-color: #3b5998;
+        }
+
+        &.github {
+            background-color: #111;
+        }
+        
+        &.google {
+            background-color: #d3d3d3;
+        }
+
+        &:hover {
+            scale: .95;
+        }
+    }
+}

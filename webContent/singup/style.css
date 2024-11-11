@@ -1,0 +1,32 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(../images/bg-wpp.jpg);
+}
+
+.card {
+  border-radius: 1rem;
+  opacity: .95;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.btn {
+  background-color: #6d6d6d;
+  color: #fff !important;
+}
+
+.btn:hover{
+  background-color: rgb(52, 69, 94);
+}

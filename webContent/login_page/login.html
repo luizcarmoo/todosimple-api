@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Please login to continue</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="login-card">
+      <div class="column">
+        <h2>Login</h2>
+        <p>After logining in, you can enjoy all privileges.</p>
+        <form>
+          <div class="form-item">
+            <input type="text" class="form-element" placeholder="Username" />
+          </div>
+          <div class="form-item">
+            <input
+              type="password"
+              class="form-element"
+              placeholder="Password"
+              required="true"
+              id="password"
+            />
+          </div>
+          <div class="form-checkbox-item">
+            <input type="checkbox" id="rememberMe" checked />
+            <label for="rememberMe">Remember Me</label>
+          </div>
+          <div class="flex">
+            <button type="button" onclick="login()">Login</button>
+            <a href="#">Forgot your password?</a>
+          </div>
+          <p style="margin-top: 3rem; margin-bottom: 1.5rem">
+            Other sing-in methods
+          </p>
+          <div class="social-buttons">
+            <a href="#" class="google">
+              <i class="bi bi-google"></i>
+            </a>
+            <a href="#" class="linkedin">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="#" class="github">
+              <i class="bi bi-github"></i>
+            </a>
+          </div>
+        </form>
+      </div>
+      <div class="column">
+        <div class="svg-container"></div>
+        <h2>Welcome to ToDo Simple App</h2>
+        <p>Don't have an account?</p>
+        <a href="../singup/singup.html">Sing Up</a>
+      </div>
+    </div>
+  </body>
+</html>

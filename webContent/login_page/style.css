@@ -1,0 +1,215 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-color: #00d9ff;
+  width: 60%;
+  height: 100vh;
+  -webkit-clip-path: polygon(0 100%, 0 0, 100% 0, 70% 100%);
+          clip-path: polygon(0 100%, 0 0, 100% 0, 70% 100%);
+  z-index: -1;
+}
+
+.login-card {
+  background-color: white;
+  border: 1px solid rgba(221, 221, 221, 0.5215686275);
+  box-shadow: 0 10px 50px -30px black;
+  width: 90vw;
+  height: 90vh;
+  border-radius: 30px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.login-card a {
+  text-decoration: none;
+  color: #0077ff;
+}
+
+.login-card .column {
+  padding: 4rem;
+}
+
+.login-card .column:last-child {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.login-card .column:last-child .svg-container {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  width: 100%; /* Ajuste o tamanho conforme necessário */
+  height: 100%; /* Ajuste o tamanho conforme necessário */
+  background: url("../images/model-2-login-screen-animate.svg") no-repeat;
+  background-size: contain;
+  background-position: right;
+  opacity: 50%;
+  filter: drop-shadow(2px 2px 10px rgba(0, 108, 122, 0.5019607843));
+}
+
+.login-card .column:last-child:after {
+  content: "";
+  position: absolute;
+  background: linear-gradient(90deg, white, rgba(255, 255, 255, 0.2));
+  inset: 0;
+}
+
+.login-card .column:last-child * {
+  z-index: 1;
+}
+
+.login-card .column:last-child a {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: rgba(0, 162, 255, 0.7137254902);
+  text-shadow: 2px 2px 3px #0077ff;
+}
+
+.login-card .column:last-child a:hover {
+  box-shadow: 1px 1.5px 5px gray;
+  text-shadow: 2px 2px 3px #17283d;
+  background-color: rgba(0, 162, 255, 0.862745098);
+}
+
+.login-card .column:last-child a:active {
+  scale: 0.95;
+  background-color: #006199;
+}
+
+.login-card .column:last-child {
+  text-align: center;
+}
+
+.login-card h1 {
+  margin-bottom: 15px;
+}
+
+.login-card .form-element {
+  width: 100%;
+  border: none;
+  background-color: #f1f1f1;
+  padding: 20px 30px;
+  font-size: 20px;
+  border-radius: 30px;
+  transition: box-shadow 0.2s;
+}
+
+.login-card .form-element:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #00d9ff;
+}
+
+.login-card input[type=checkbox] {
+  accent-color: #00d9ff;
+  width: 16px;
+  height: 16px;
+}
+
+.login-card form {
+  margin-top: 3rem;
+}
+
+.login-card form > * {
+  margin-top: 1rem;
+}
+
+.login-card form > * button {
+  font-size: 15px;
+  font-weight: 700;
+  background-color: rgba(0, 162, 255, 0.7137254902);
+  color: white;
+  border: none;
+  padding: 20px 30px;
+  border-radius: 35px;
+  text-shadow: 1px 1px 3px #0077ff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.login-card form > * button:hover {
+  box-shadow: 1px 1.5px 5px gray;
+  text-shadow: 1px 1px 3px #17283d;
+  background-color: rgba(0, 162, 255, 0.862745098);
+}
+
+.login-card form > * button:active {
+  scale: 0.95;
+  background-color: #006199;
+}
+
+.login-card form > * .form-checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-left: 5px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50px;
+  font-size: 20px;
+  color: white;
+}
+
+.social-buttons a.linkedin {
+  background-color: #3b5998;
+}
+
+.social-buttons a.github {
+  background-color: #111;
+}
+
+.social-buttons a.google {
+  background-color: #ff0000;
+}
+
+.social-buttons a:hover {
+  scale: 0.95;
+}/*# sourceMappingURL=style.css.map */

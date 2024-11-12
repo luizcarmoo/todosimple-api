@@ -39,7 +39,7 @@ async function getTasks() {
 
 document.addEventListener("DOMContentLoaded", function (event) {
   if (!localStorage.getItem("Authorization"))
-    window.location = "/view/login.html";
+    window.location = "/webContent/home_page/index.html";
 });
 
 getTasks();

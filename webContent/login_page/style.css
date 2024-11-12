@@ -16,6 +16,14 @@ body {
   padding: 1.5rem;
 }
 
+.toast {
+  position: absolute;
+}
+
+#okToast {
+  position: absolute;
+}
+
 body::after {
   content: "";
   position: fixed;
@@ -46,7 +54,7 @@ body::after {
 }
 
 .login-card .column {
-  padding: 4rem;
+  padding: 2rem;
 }
 
 .login-card .column:last-child {
@@ -121,8 +129,8 @@ body::after {
   border: none;
   background-color: #f1f1f1;
   padding: 20px 30px;
-  font-size: 20px;
-  border-radius: 30px;
+  font-size: 1.2rem;
+  border-radius:.5rem;
   transition: box-shadow 0.2s;
 }
 

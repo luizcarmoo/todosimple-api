@@ -30,3 +30,10 @@ h2 {
 .btn:hover{
   background-color: rgb(52, 69, 94);
 }
+
+#okToast {
+  justify-content: center;
+  position: absolute;
+  width: 30vw;
+  height: 30vh;
+}

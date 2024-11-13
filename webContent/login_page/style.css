@@ -22,6 +22,8 @@ body {
 
 #okToast {
   position: absolute;
+  z-index: 10;
+  box-shadow:2px 2px 5px #111;
 }
 
 body::after {

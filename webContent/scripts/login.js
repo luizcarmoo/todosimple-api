@@ -27,7 +27,7 @@ async function login() {
   }
 
   window.setTimeout(function () {
-    window.location = "/webContent/home_page/index.html";
+    window.location = "/webContent/home_page/home.html";
   }, 2000);
 }
 
